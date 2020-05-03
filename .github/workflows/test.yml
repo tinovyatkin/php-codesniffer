@@ -35,11 +35,12 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - run: yarn install --frozen-lockfile --ignore-optional --non-interactive --silent
+
       - name: Adjust execute flag for phpcs
         if: matrix.os != 'windows-latest'
         run: chmod +x ./node_modules/php_codesniffer_master/bin/phpcs
 
-      - run: yarn install --frozen-lockfile --ignore-optional --non-interactive --silent
       - run: node --expose-gc node_modules/jest/bin/jest --forceExit --bail --colors --logHeapUsage --maxWorkers=2 --ci
 
       - uses: codecov/codecov-action@v1
