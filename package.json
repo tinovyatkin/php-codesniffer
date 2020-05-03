@@ -1,17 +1,17 @@
 {
-  "name": "____FIX_ME____",
-  "description": "____FIX_ME____",
+  "name": "php-codesniffer",
+  "description": "Runs phpcs on specified files [WIP]",
   "license": "MIT",
   "author": "Konstantin Vyatkin <tino@vtkn.io>",
-  "homepage": "https://github.com/tinovyatkin/____FIX_ME____#readme",
+  "homepage": "https://github.com/tinovyatkin/php-codesniffer#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinovyatkin/____FIX_ME____.git"
+    "url": "git+https://github.com/tinovyatkin/php-codesniffer.git"
   },
   "bugs": {
-    "url": "https://github.com/tinovyatkin/____FIX_ME____/issues"
+    "url": "https://github.com/tinovyatkin/php-codesniffer/issues"
   },
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint --ext=ts ./src",
@@ -37,9 +37,15 @@
     "typescript": "latest"
   },
   "keywords": [
-    "____FIX_ME____"
+    "PHP_CodeSniffer",
+    "php",
+    "lint",
+    "phpcs"
   ],
   "engines": {
     "yarn": ">=1.19"
+  },
+  "dependencies": {
+    "php_codesniffer_master": "1.0.0"
   }
 }
