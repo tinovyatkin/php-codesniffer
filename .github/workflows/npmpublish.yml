@@ -24,6 +24,8 @@ jobs:
             ${{ runner.OS }}-
       - run: rm .yarnclean
       - run: yarn install --frozen-lockfile --ignore-optional --non-interactive --silent
+      - name: Adjust execute flag for phpcs
+        run: chmod +x ./node_modules/php_codesniffer_master/bin/phpcs
       - run: node --expose-gc node_modules/jest/bin/jest --forceExit --logHeapUsage --runInBand --ci
       - uses: codecov/codecov-action@v1
         with:
