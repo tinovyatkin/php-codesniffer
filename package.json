@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ext=ts ./src",
-    "prepublishOnly": "jest --passWithNoTests && tsc",
+    "prepublishOnly": "jest && tsc",
     "test": "jest"
   },
   "dependencies": {
