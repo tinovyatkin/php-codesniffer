@@ -21,21 +21,24 @@ jobs:
           - os: windows-latest
             node: 10.x
           - os: windows-latest
-            node: 13.x
+            node: 14.x
           # On macOS, run tests with only the latest environments.
           - os: macOS-latest
             node: 10.x
           - os: macOS-latest
-            node: 13.x
+            node: 14.x
 
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+
+      - name: Adjust execute flag for phpcs
+        if: matrix.os != 'windows-latest'
+        run: chmod +x ./node_modules/php_codesniffer_master/bin/phpcs
+
       - run: yarn install --frozen-lockfile --ignore-optional --non-interactive --silent
       - run: node --expose-gc node_modules/jest/bin/jest --forceExit --bail --colors --logHeapUsage --maxWorkers=2 --ci
 
