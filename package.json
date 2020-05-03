@@ -1,6 +1,6 @@
 {
   "name": "php-codesniffer",
-  "description": "Runs phpcs on specified files [WIP]",
+  "description": "Runs phpcs on specified file(s) and get result as JSON",
   "license": "MIT",
   "author": "Konstantin Vyatkin <tino@vtkn.io>",
   "homepage": "https://github.com/tinovyatkin/php-codesniffer#readme",
@@ -12,9 +12,10 @@
     "url": "https://github.com/tinovyatkin/php-codesniffer/issues"
   },
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "main": "dist/linter.js",
   "files": [
-    "dist/"
+    "dist/linter.d.ts",
+    "dist/linter.js"
   ],
   "scripts": {
     "build": "tsc",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@types/jest": "latest",
+    "@types/semver": "7.1.0",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "7.0.0-rc.0",
@@ -39,6 +41,7 @@
     "npm-package-json-lint": "latest",
     "prettier": "latest",
     "prettier-package-json": "latest",
+    "semver": "7.3.2",
     "ts-jest": "latest",
     "ts-node": "8.10.1",
     "typescript": "latest"
@@ -50,6 +53,7 @@
     "phpcs"
   ],
   "engines": {
-    "yarn": ">=1.19"
+    "yarn": ">=1.19",
+    "node": ">= 10.10"
   }
 }

@@ -1,9 +1,11 @@
 import * as path from 'path';
+import * as semver from 'semver';
 
 import { version, lint } from './linter';
 describe('linter tests', () => {
   it('returns version', async () => {
     expect(await version('php ./test/phpcs.phar')).toBe('3.5.5');
+    expect(semver.valid(await version())).toBeTruthy();
   });
   it('throws on non-version', async () => {
     await expect(version('git')).rejects.toHaveProperty(
