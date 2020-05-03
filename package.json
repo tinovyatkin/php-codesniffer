@@ -11,6 +11,9 @@
   "bugs": {
     "url": "https://github.com/tinovyatkin/php-codesniffer/issues"
   },
+  "files": [
+    "dist/"
+  ],
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {

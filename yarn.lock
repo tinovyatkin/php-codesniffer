@@ -4728,6 +4728,11 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+php_codesniffer_master@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/php_codesniffer_master/-/php_codesniffer_master-1.0.0.tgz#1c4688bc02dadae3f9300a51fc0d330b8d0f27fd"
+  integrity sha512-ycCWslw8AWpRJD1NR2sfXAEyc8JWw3NK5by2Axqzf/ivjoAMUwKYgsV1zVAT8JzO86FLgLM3P4l1Pz9qut725g==
+
 picomatch@^2.0.4, picomatch@^2.0.5:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.1.1.tgz#ecdfbea7704adb5fe6fb47f9866c4c0e15e905c5"
