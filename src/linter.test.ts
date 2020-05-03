@@ -13,18 +13,25 @@ describe('linter tests', () => {
   });
 
   it('lints several files', async () => {
-    expect(
-      await lint(
-        './test/fixtures/test1.php ./test/fixtures/test2.php',
-        undefined,
-        {
-          standard: path.resolve(
-            __dirname,
-            '../test/preferBeautifierConfig/subFolder/phpcs.xml',
-          ),
-        },
-      ),
-    ).toMatchSnapshot();
+    const res = await lint(
+      './test/fixtures/test1.php ./test/fixtures/test2.php',
+      undefined,
+      {
+        standard: path.resolve(
+          __dirname,
+          '../test/preferBeautifierConfig/subFolder/phpcs.xml',
+        ),
+      },
+    );
+    expect(res.totals).toMatchInlineSnapshot(`
+      Object {
+        "errors": 13,
+        "fixable": 13,
+        "warnings": 1,
+      }
+    `);
+    // result has fully qualifued file names, so, it will be different on CI
+    expect(Object.values(res.files)).toMatchSnapshot();
   });
 
   it('should parse phpcs errors and rethrow', async () => {
