@@ -71,7 +71,7 @@ export async function lint(
   totals: LintTotals;
   files: Record<
     string,
-    { errors: number; warnings: number; message: LinterMessage[] }
+    { errors: number; warnings: number; messages: LinterMessage[] }
   >;
 }> {
   try {
