@@ -75,7 +75,7 @@ export async function lint(
   >;
 }> {
   try {
-    const ver = await version();
+    const ver = await version(executablePath);
     assert.ok(
       ver >= '2.6',
       `This library requires phpcs version 2.6 or later, received ${ver}`,
