@@ -1,6 +1,6 @@
 # php-codesniffer [![codecov](https://codecov.io/gh/tinovyatkin/php-codesniffer/branch/master/graph/badge.svg)](https://codecov.io/gh/tinovyatkin/php-codesniffer)
 
-Executes `phpcs` over a given file(s) and return results as JSON
+Executes `phpcs` over a given file(s) and return results as JSON.
 Written in TypeScript, good test coverage, no dependencies.
 
 ```ts
