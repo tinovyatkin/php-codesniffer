@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/jest": "latest",
-    "@types/semver": "7.3.0",
+    "@types/semver": "7.3.1",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "7.3.1",
