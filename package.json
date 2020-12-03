@@ -42,7 +42,7 @@
     "prettier-package-json": "latest",
     "semver": "7.3.2",
     "ts-jest": "latest",
-    "ts-node": "9.0.0",
+    "ts-node": "9.1.0",
     "typescript": "latest"
   },
   "keywords": [
