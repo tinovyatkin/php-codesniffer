@@ -40,7 +40,7 @@
     "npm-package-json-lint": "latest",
     "prettier": "latest",
     "prettier-package-json": "latest",
-    "semver": "7.3.4",
+    "semver": "7.3.5",
     "ts-jest": "latest",
     "ts-node": "9.1.1",
     "typescript": "latest"
