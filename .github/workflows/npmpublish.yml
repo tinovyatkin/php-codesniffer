@@ -27,7 +27,7 @@ jobs:
       - name: Adjust execute flag for phpcs
         run: chmod +x ./node_modules/php_codesniffer_master/bin/phpcs
       - run: node --expose-gc node_modules/jest/bin/jest --forceExit --logHeapUsage --runInBand --ci
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v3
         with:
           file: ./coverage/coverage-final.json
           token: ${{ secrets.CODECOV_TOKEN }}
