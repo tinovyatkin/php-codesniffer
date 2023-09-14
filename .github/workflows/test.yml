@@ -43,7 +43,7 @@ jobs:
 
       - run: node --expose-gc node_modules/jest/bin/jest --forceExit --bail --colors --logHeapUsage --maxWorkers=2 --ci
 
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v4
         with:
           file: ./coverage/coverage-final.json
           token: ${{ secrets.CODECOV_TOKEN }}
