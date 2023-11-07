@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/jest": "latest",
-    "@types/semver": "7.3.8",
+    "@types/semver": "7.5.5",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "7.32.0",
@@ -40,7 +40,7 @@
     "npm-package-json-lint": "latest",
     "prettier": "latest",
     "prettier-package-json": "latest",
-    "semver": "7.3.5",
+    "semver": "7.5.4",
     "ts-jest": "latest",
     "ts-node": "9.1.1",
     "typescript": "latest"
